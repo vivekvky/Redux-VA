@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import debounce from "lodash.debounce";
-import SearchContext from '../../store/search-context'
 import LoadingSpinner from '../Loadingspinner/Loadingspinner'
 import Search from '../Search/Search'
 import classes from './Home.module.css'
@@ -17,11 +16,6 @@ export default function Home() {
     facility: [],
     star: '0'
   })
-
-
-  const ctx = useContext(SearchContext)
-
-  // const { isLoding, searchData } = ctx;
 
   const searchData = useSelector(state => {
     return state.search.searchData

@@ -1,4 +1,3 @@
-import axios from "axios";
 import { searchAction } from "./search-slice";
 
 const headers = {

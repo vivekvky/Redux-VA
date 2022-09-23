@@ -1,11 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { searchListData } from '../../store/search-actions';
-import SearchContext from '../../store/search-context';
 import classes from './Search.module.css';
+
 export default function Search() {
     const [searchValue, setValue] = useState({ location: 'new-york', date: '' })
-    const ctx = useContext(SearchContext)
     const minDate = new Date().toISOString().slice(0, 10);
     const defaultData = {
         "bookingType": "hotel",
@@ -35,7 +34,6 @@ const dispatch = useDispatch();
     const onSearch = (e) => {
         e.preventDefault()
         const postdata = { ...defaultData, location: searchValue.location, departureDate: searchValue.date.slice(0, 10).split('-').reverse().join('-') }
-        // ctx.onSearch(postdata)
         dispatch(searchListData(postdata));
     }
 

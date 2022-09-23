@@ -1,0 +1,40 @@
+
+.submit-button {
+  width: 50%;
+  background-color: #067b93;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.submit-button:hover {
+  background-color: #149db8;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  margin: 5px;
+  justify-content: flex-end;
+}

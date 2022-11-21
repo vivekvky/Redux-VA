@@ -1,6 +1,5 @@
-import React from "react";
-import classes from  "./Loadingspinner.module.css";
-
+import React from 'react';
+import classes from './Loadingspinner.module.css';
 
 export default function LoadingSpinner() {
   return (

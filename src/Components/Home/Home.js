@@ -35,8 +35,6 @@ export default function Home() {
 
   /* filter by start rating */
   const starHandler = (value) => {
-    const a = 6;
-    const b = a;
     setFilterCriteria((prev) => {
       return { ...prev, star: value };
     });

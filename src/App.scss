@@ -58,3 +58,24 @@
 main{
   margin-top: 68px;
 }
+.container-width{
+  width: 50%;
+}
+.main-div{
+  margin-left: 30%;
+}
+.button-prm{
+    width: 50%;
+    background-color: #067b93;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .button-prm:hover {
+    background-color: #149db8;
+  }
